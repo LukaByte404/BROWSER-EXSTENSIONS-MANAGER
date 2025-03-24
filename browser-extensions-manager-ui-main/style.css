@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap");
+
+/* Colors */
+:root {
+  --neutral-900: hsl(227, 75%, 14%);
+  --neutral-800: hsl(226, 25%, 17%);
+  --neutral-700: hsl(225, 23%, 24%);
+  --neutral-600: hsl(226, 11%, 37%);
+  --neutral-300: hsl(0, 0%, 78%);
+  --neutral-200: hsl(217, 61%, 90%);
+  --neutral-100: hsl(0, 0%, 93%);
+  --neutral-0: hsl(200, 60%, 99%);
+
+  --red-400: hsl(3, 86%, 64%);
+  --red-500: hsl(3, 71%, 56%);
+  --red-700: hsl(3, 77%, 44%);
+
+  --light-gradient: linear-gradient(180deg, #ebf2fc 0%, #eef8f9 100%);
+  --dark-gradient: linear-gradient(180deg, #040918 0%, #091540 100%);
+}
+
+/* Typography */
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--neutral-900);
+  margin: 0;
+  height: 100vh;
+  background: var(--dark-gradient);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+strong {
+  font-weight: 500;
+}
+
+/* Example for gradients */
+.background-light {
+  background: var(--light-gradient);
+}
+
+.background-dark {
+  background: var(--dark-gradient);
+}
+
+/* Example for colors */
+.text-red {
+  color: var(--red-400);
+}
+
+.text-neutral {
+  color: var(--neutral-600);
+}
+
+/* start of the search section */
+.search-section-main {
+  max-width: 1440px;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-section form input {
+  padding-right: 1000px;
+  padding-top: 45px;
+  background-color: var(--neutral-700);
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--neutral-0);
+}
+
+form {
+  position: relative;
+}
+
+form img:nth-child(1) {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+
+form img:nth-child(2) {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: var(--neutral-600);
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.filter-section {
+  color: var(--neutral-0);
+}
+
+.filter-section button {
+  background-color: var(--neutral-600);
+  color: var(--neutral-200);
+  border: none;
+  padding: 12px;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.filter-section {
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
+  gap: 56%;
+  padding-top: 50px;
+}
+
+/* end of the search section */
