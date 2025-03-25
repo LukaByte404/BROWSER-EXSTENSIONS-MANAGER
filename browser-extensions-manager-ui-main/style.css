@@ -129,5 +129,24 @@ form img:nth-child(2) {
   gap: 56%;
   padding-top: 50px;
 }
-
 /* end of the search section */
+
+/* start of the result section */
+
+.result-section-main {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.result-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.result-section div {
+  background-color: var(--neutral-700);
+  border-radius: 20px;
+}
+/* end of the result section */
